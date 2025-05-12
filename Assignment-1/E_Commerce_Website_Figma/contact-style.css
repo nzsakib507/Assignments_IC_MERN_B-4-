@@ -1,0 +1,154 @@
+/* header footer abd product section css is comming from style.css */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* #header,#footer,#shop-hero{
+    loading from style.css 
+} */
+
+/* this hero will be loading from shop-style.css  */
+/* #shop-hero{
+    width: 100%;
+    height: 500px;
+    background-image: url('./assets/images/Shop/shop-hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.shop-hero-title{
+    font-size: 48px;
+    font-weight: 500;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    font-family: 'poppins' sans-serif;
+}
+.shop-hero-sub-title{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    font-family: 'poppins' sans-serif;
+    margin-top: 20px;
+} */
+
+
+
+#contact{
+    width: 100%;
+    margin: 0 auto;
+}
+.contact-area{
+    width: 100%;
+    margin: 70px auto;
+}
+.contact-title{
+    font-size: 36px;
+    font-weight: 600;
+    color: #000;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'poppins' sans-serif;
+}
+.contact-sub-title{
+    font-size: 17px;
+    font-weight: 400;
+    color: #9f9f9f;
+    width: 650px;
+    margin: 0 auto;
+    line-height: 150%;
+    text-align: center;
+    font-family: 'poppins' sans-serif;
+    margin-top: 18px;
+}
+
+.contact-info-container{
+    width: 76%;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 60px;
+}
+.contact-info{
+    flex: 35%;
+    margin: 0 50px;
+}
+.contact-address{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+.contact-address-image{
+    width: fit-content;
+    height: fit-content;
+}
+.contact-address-title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    width: 100%;
+    margin-bottom: 5px;
+    font-family: 'poppins' sans-serif;
+}
+.contact-address-sub-title{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    width: 100%;
+    line-height: 150%;
+    font-family: 'poppins' sans-serif;
+}
+.contact-form{
+    flex: 70%;
+    margin: 0 5%;
+}
+.form-group{
+    margin-bottom: 45px;
+}
+.form-input-label{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    /* width: 100%; */
+    padding-bottom: 15px;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+}
+.form-input{
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #9f9f9f;
+}
+.form-submit-btn{
+    padding: 20px 110px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #B88E2F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'poppins', sans-serif;
+    transition: background-color 0.3s ease;
+}

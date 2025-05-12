@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <!-- header footer abd product section css is comming from style.css -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./shop-style.css">
+    <!-- <link rel="stylesheet" href="./single-product-style.css"> -->
+    <!-- <link rel="stylesheet" href="./cart-style.css"> -->
+     <link rel="stylesheet" href="./checkout-style.css">
+
+     <!-- google font Montserrat -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- google font Poppins -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+     
+</head>
+<body>
+
+    <header id="header">
+        <div class="header-container">
+            <div class="nav-menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></div>
+            <div class="logo-container">
+                <img class="logo" src="./assets/images/Home/Meubel House_Logos.png" alt="">
+                <div class="brand-name">Furniro</div>
+            </div>
+            <ul class="navbar">
+                <li class="nav-items"><a href="./index.html">Home</a></li>
+                <li class="nav-items"><a href="./shop.html">Shop</a></li>
+                <li class="nav-items"><a href="#">About</a></li>
+                <li class="nav-items"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="header-features">
+                <img src="./assets/images/Home/account-alert.png" alt="">
+                <img src="./assets/images/Home/search-icon.png" alt="">
+                <img src="./assets/images/Home/love-icon.png" alt="">
+                <a href="./cart.html"><img src="./assets/images/Home/cart-icon.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="shop-hero">
+        <div class="shop-hero-title">Checkout</div>
+        <div class="shop-hero-sub-title"><b>Home</b> > Checkout</div>
+    </section>
+
+    <section id="checkour-area">
+        <div class="checkout-container">
+            <div class="billing-details-left">
+                <div class="billing-title">Billing details</div>
+                <form action="#" method="post">
+                   <div class="billing-form-group-sidebyside">
+                        <div class="billing-form-group">
+                            <label class="billing-label" for="name">First Name</label>
+                            <input class="billing-input" type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="billing-form-group">
+                            <label class="billing-label" for="email">Last Name</label>
+                            <input class="billing-input" type="text" id="last-name" name="last-name" required>
+                        </div>
+                   </div>
+                    <div class="billing-form-group">
+                        <label class="billing-label" for="phone">Company Name (Optional)</label>
+                        <input class="billing-input" type="text" id="company-name" name="company-name">
+                    </div>
+                    <div class="billing-form-group">
+                        <label class="billing-label" for="address">Country / Region</label>
+                        <!-- <input class="billing-input" type="text" id="Country" name="Country" required> -->
+                         <select name="Country" id="Country">
+                            <option value="">Select Country</option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">UK</option>
+                            <option value="Australia">Australia</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Other">Other</option>
+                         </select>
+                    </div>
+                    <div class="billing-form-group">
+                        <label class="billing-label" for="address">Street address</label>
+                        <input class="billing-input" type="text" id="s-address" name="s-address" required>
+                    </div>
+                    <div class="billing-form-group">
+                        <label class="billing-label" for="address">Town / City</label>
+                        <input class="billing-input" type="text" id="city" name="city">
+                    </div>
+                    <div class="billing-form-group">
+                        <label class="billing-label" for="address">Province</label>
+                        <!-- <input class="billing-input" type="text" id="Country" name="Country" required> -->
+                         <select name="Province" id="Province">
+                            <option value="">Select Province</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Rongpur">Rongpur</option>
+                            <option value="Khulna">Khulna</option>
+                         </select>
+                    </div>
+                    <div class="billing-form-group">
+                        <label class="billing-label" for="address">ZIP code</label>
+                        <input class="billing-input" type="text" id="zip-code" name="zip-code">
+                    </div>
+                    <div class="billing-form-group">
+                        <label class="billing-label" for="phone">Phone</label>
+                        <input class="billing-input" type="number" id="phone" name="phone" required>
+                    </div>
+                    <div class="billing-form-group">
+                        <label class="billing-label" for="phone">Email</label>
+                        <input class="billing-input" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="billing-form-group">
+                        <input class="billing-input" type="text" id="addition-info " name="addition-info" placeholder="Additional information">
+                    </div>
+                </form>
+            </div>
+            <div class="product-billing-right">
+                <div class="billing-product-bill-container">
+                    <div class="billing-product-title">Product</div>
+                    <div class="billing-product-subtotal">Subtotal</div>
+                </div>
+                <div class="billing-product-bill-container">
+                    <div class="billing-product-name">Asgaard sofa <span class="billing-productNumber">X 1</span></div>
+                    <div class="billing-product-price">Rs. 250,000.00</div>
+                </div>
+                <div class="billing-product-bill-container">
+                    <div class="billing-product-subtotal-text">Subtotal</div>
+                    <div class="billing-product-subtotal-price">Rs. 250,000.00</div>
+                </div>
+                <div class="billing-product-bill-container">
+                    <div class="billing-product-total-text">Total</div>
+                    <div class="billing-product-total-price">Rs. 250,000.00</div>
+                </div>
+                <hr>
+                <div class="payment-method">
+                    <div class="radio-input">
+                        <input type="radio" id="DBT" name="payment-method" required>
+                        <label style="font-weight: 500;" for="DBT">Direct Bank Transfer</label>
+                    </div>
+                    <p class="DBT-text">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+                    <div class="radio-input">
+                        <input type="radio" id="OP" name="payment-method" required>
+                        <label class="text-9f" for="OP">Online payment</label>
+                    </div>
+                    <div class="radio-input">
+                        <input type="radio" id="COD" name="payment-method" required>
+                        <label class="text-9f" for="COD">Cash On Delivery</label>
+                    </div>
+                    <p class="payment-method-bottom-txt">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <span class="PV">privacy policy</span>.</p>
+                    <div class="chackout-btn-container">
+                        <button type="submit" class="chackout-btn">Place order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="features-container">
+            <div class="features-card">
+                <img class="features-card-image" src="./assets/images/Shop/High-queality-icon.png" alt="">
+                <div class="features-card-text-container">
+                    <div class="features-card-title">High Quelity</div>
+                    <div class="features-card-sub-title">crafted from top materials</div>
+                </div>
+            </div>
+            <div class="features-card">
+                <img class="features-card-image" src="./assets/images/Shop/Warrenty-protection-icon.png" alt="">
+                <div class="features-card-text-container">
+                    <div class="features-card-title">Warranty Protection</div>
+                    <div class="features-card-sub-title">Over 2 years</div>
+                </div>
+            </div>
+            <div class="features-card">
+                <img class="features-card-image" src="./assets/images/Shop/Free-shipping-icon.png" alt="">
+                <div class="features-card-text-container">
+                    <div class="features-card-title">Free Shipping</div>
+                    <div class="features-card-sub-title">Order over 150 $</div>
+                </div>
+            </div>
+            <div class="features-card">
+                <img class="features-card-image" src="./assets/images/Shop/support-icon.png" alt="">
+                <div class="features-card-text-container">
+                    <div class="features-card-title">24 / 7 Support</div>
+                    <div class="features-card-sub-title">Dedicated support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="ft-card-1">
+                <!-- brand-name css is comming from header brand name -->
+                <div class="brand-name ft-title-padding">Funiro</div>
+                <div class="ft-address">400 University Drive Suite 200 Coral Gables,
+                    FL 33134 USA</div>
+            </div>
+            <div class="ft-card-2">
+                <div class="ft-title-padding ft-title">Links</div>
+                <div class="ft-list"><a href="./index.html">Home</a></div>
+                <div class="ft-list"><a href="./shop.html">Shop</a></div>
+                <div class="ft-list"><a href="#">About</a></div>
+                <div class="ft-list"><a href="./contact.html">Contact</a></div>
+            </div>
+            <div class="ft-card-3">
+                <div class="ft-title-padding ft-title">Help</div>
+                <div class="ft-list"><a href="#">Payment Options</a></div>
+                <div class="ft-list"><a href="#">Returns</a></div>
+                <div class="ft-list"><a href="#">Privacy Policies</a></div>
+            </div>
+            <div class="ft-card-3">
+                <div class="ft-title-padding ft-title">Newsletter</div>
+                <div class="ft-input-container">
+                    <input class="ft-email-input" type="text" placeholder="Enter Your Email Address">
+                    <button class="suscribe-btn">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="ft-bottom">
+            2023 furino. All rights reverved
+        </div>
+    </footer>
+    
+</body>
+</html>

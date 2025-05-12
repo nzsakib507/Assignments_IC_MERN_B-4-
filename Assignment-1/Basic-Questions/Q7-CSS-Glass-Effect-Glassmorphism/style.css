@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.main-container{
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/leafy-tree-branch-vibrant-autumn-colors-generated-by-ai.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-container{
+    width: fit-content;
+    padding: 30px;
+    border-radius: 15px;
+    border: none;
+    /* background: ; */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    width: 400px;
+}
+.main-title{
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0 20px 0;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.email{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(1px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.pass{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+.email::placeholder,.pass::placeholder{
+    color: white;
+    font-weight: 500;
+}
+.login-btn{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.or-text{
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+.fb-google-container{
+    display: flex;
+    gap: 30px;
+    /* margin-top: 20px; */
+}
+.facebook{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    text-align: center;
+    padding: 10px 10px;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.fb-logo{
+    width: 13%;
+    height: fit-content;
+}

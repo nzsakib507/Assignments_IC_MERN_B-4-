@@ -1,0 +1,448 @@
+/* header footer abd product section css is comming from style.css */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* #header,#footer{
+    loading from style.css 
+} */
+
+/* hero will be loaded from shop-style.css */
+/* #shop-hero{
+    width: 100%;
+    height: 500px;
+    background-image: url('./assets/images/Shop/shop-hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.shop-hero-title{
+    font-size: 48px;
+    font-weight: 500;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    font-family: 'poppins' sans-serif;
+}
+.shop-hero-sub-title{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    font-family: 'poppins' sans-serif;
+    margin-top: 20px;
+} */
+
+
+
+/* #our-product{
+    loading from style.css
+} */
+
+/* this section features will be loading from shop-style.css */
+/* #features{
+    width: 100%;
+    margin: 0 auto;
+    background: #FAF3EA;
+    padding: 80px 0;
+}
+.features-container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.features-card{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.features-card-image{   
+    width: 52px;
+    height: 60px;
+}
+.features-card-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+.features-card-title{
+    flex: 1;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'poppins', sans-serif;
+}
+.features-card-sub-title{
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    color: #898989;
+    font-family: 'poppins', sans-serif;
+} */
+
+
+
+#SP-address-bar{
+    background: #F9F1E7;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.SP-address-container{
+    width: 87%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 20px 0;
+    gap: 30px;
+}
+.SP-address-bar-home{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    cursor: pointer;
+}
+.SP-address-bar-home>a{
+    text-decoration: none;
+    color: #9f9f9f;
+}
+.SP-address-bar-AS{
+    padding: 6px 0 6px 36px;
+    border: none;
+    border-left: 2px solid #9f9f9f;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    font-family: "poppins", sans-serif;
+    cursor: pointer;
+}
+
+
+#SP-hero-product{
+    width: 100%;
+    margin: 0px auto;
+    padding: 0;
+    border: none;
+    background: white;
+}
+.SP-hero-product-container{
+    width: 89%;
+    margin: 45px auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 45px;
+}
+.SP-hero-product-image-container{
+    flex: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* gap: 15px; */
+}
+.SP-hero-small-image{
+    flex: 13%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 20px;
+}
+.product-small-image{
+    width: 100%;
+    /* margin-bottom: ; */
+}
+.SP-product-main-image{
+    flex: 87%;
+}
+.product-main-image{
+    width: 100%;
+}
+
+.SP-hero-product-Details{
+    flex: 50%;
+}
+.SP-hero-product-title{
+    color: #000;
+    font-size: 42px;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+}
+.SP-hero-product-price{
+    margin-bottom: 18px;
+    color: #9f9f9f;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "poppins", sans-serif;
+}
+.SP-hero-product-reating-container{
+    display: flex;
+    width: fit-content;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.SP-hero-product-reating-container>svg{
+    color: #000;
+    width: 20px;
+    height: 20px;
+}
+.CR{
+    font-size: 13px;
+    font-weight: 400;
+    color: #9f9f9f;
+    font-family: "poppins", sans-serif;
+    padding: 3px 0 3px 10px;
+    border: none;
+    border-left: 1.5px solid #9f9f9f;
+}
+.SP-hero-product-highlights{
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+    font-family: "poppins", sans-serif;
+    padding: 15px 0;
+    width: 420px;
+    text-align: justify;
+    border: none;
+    
+}
+.SP-product-size-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #9f9f9f;
+    font-family: "poppins", sans-serif;
+    padding: 11px 0;
+}
+.SP-product-size-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+}
+.SP-product-size-L{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    padding: 10px 15px;
+    background: #B88E2F;
+    border: none;
+    border-radius: 5px;
+}
+.SP-product-size-XL{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    font-family: "poppins", sans-serif;
+    padding: 10px 11px;
+    background: #F9F1E7;
+    border: none;
+    border-radius: 5px;
+}
+.SP-product-size-XS{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    font-family: "poppins", sans-serif;
+    padding: 10px 11px;
+    background: #F9F1E7;
+    border: none;
+    border-radius: 5px;
+}
+.SP-product-color-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #9f9f9f;
+    font-family: "poppins", sans-serif;
+    padding: 11px 0;
+    margin-top: 10px;
+}
+.SP-product-color-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 20px;
+}
+.SP-product-color-violate{
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #816DFA;
+}
+.SP-product-color-black{
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #000;
+}
+.SP-product-color-brown{
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #B88E2F;
+}
+.SP-product-AddToCart-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 50px 0;
+    border: none;
+    border-bottom: 1px solid #9f9f9f;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    font-family: "poppins", sans-serif;
+}
+.SP-product-count{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: 1px solid #9f9f9f;
+}
+.SP-product-AddToCart{
+    padding: 20px 8.5%;
+    border-radius: 10px;
+    border: 1px solid #9f9f9f;
+}
+.SP-product-info{
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+}
+.Sp-product-info-size{
+    width: 100%;
+    font-size: 16px;
+    color: #9f9f9f;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+.SP-product-info-property{
+    width: 100px;
+    display: inline-block;
+}
+.SP-product-info-value{
+    display: inline;
+    width: calc(100% - 100px);
+}
+.Sp-product-info-size-share{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #9f9f9f;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+.SP-product-info-share{
+    width: calc(100% - 150px);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+
+}
+.share-logo-image{
+    width: 25px;
+    height: 25px;
+}
+
+#SP-hero-product-description{
+    width: 100%;
+    padding: 0;
+    margin: 40px auto;
+}
+.SP-hero-product-description-title-container{
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.SP-hero-product-description-title-Des{
+    /* flex: content; */
+    width: fit-content;
+    display: inline;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    font-family: "poppins", sans-serif;
+}
+.SP-hero-product-description-title-AI,
+.SP-hero-product-description-title-Review{
+    /* flex: content; */
+    width: fit-content;
+    display: inline;
+    font-size: 24px;
+    font-weight: 400;
+    color: #9f9f9f;
+    font-family: "poppins", sans-serif;
+}
+.SP-product-D1{
+    width: 1026px;
+    margin: 30px auto 20px auto;
+    color: #9f9f9f;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    font-family: "Poppins", sans-serif
+}
+.SP-product-D2{
+    width: 1026px;
+    margin: 0 auto 30px auto;
+     color: #9f9f9f;
+     font-size: 16px;
+     font-weight: 400;
+     text-align: justify;
+     font-family: "Poppins", sans-serif;   
+}
+.SP-product-description-image-container{
+    width: 82%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.SP-product-description-image{
+    width: 100%;
+}

@@ -1,0 +1,235 @@
+/* header footer abd product section css is comming from style.css */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* #header,#footer,#shop-hero{
+    loading from style.css 
+} */
+
+/* this hero will be loading from shop-style.css  */
+/* #shop-hero{
+    width: 100%;
+    height: 500px;
+    background-image: url('./assets/images/Shop/shop-hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.shop-hero-title{
+    font-size: 48px;
+    font-weight: 500;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    font-family: 'poppins' sans-serif;
+}
+.shop-hero-sub-title{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    font-family: 'poppins' sans-serif;
+    margin-top: 20px;
+} */
+
+
+
+#blog-area{
+    margin: 70px auto;
+}
+.blog-area-container{
+    width: 87%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 60px;
+}
+.main-blog-left{
+    flex: 68%;
+}
+.blog-side-panel-right{
+    flex: 28%;
+}
+.blog{
+    width: 100%;
+}
+.blog-image{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+.blog-caption-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 35px;
+    margin-top: 20px;
+}
+.blog-caption{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 7px;
+}
+.blog-caption-image{
+    width: 16px;
+    height: 16px;
+}
+.blog-caption-text{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #9f9f9f;
+}
+.blog-title{
+    font-size: 30px;
+    font-weight: 6500;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    margin: 22px 0;
+}
+.blog-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #9f9f9f;
+    font-family: "Poppins", sans-serif;
+    line-height: 150%;
+    text-align: justify;
+}
+.blog-read-more-btn{
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 20px 0 70px 0;
+}
+.blog-read-more-btn>a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+/* this section is from shop css
+this is navigation button between pages */
+/* .our-product-page-change-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+.our-product-page-change-btn-container>a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'poppins' sans-serif;
+    padding: 20px 23px;
+    background-color: #F9F1E7;
+    border: none;
+    border-radius: 5px;
+}
+.bg-brown-btn{
+    background-color: #B88E2F !important;
+} */
+
+.blog-search-bar{
+    margin: 0px auto 50px auto;
+    width: 90%;
+    border: 1.5px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px;
+    background: white;
+}
+.blog-search-bar-input{
+    border: none;
+    padding: 0 10px;
+}
+/* .blog-search-bar-image{
+
+} */
+
+.blog-catagory-container{
+    margin: 50px auto 0 auto;
+    width: 75%;
+}
+.blog-catagory-title{
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 30px;
+}
+.blog-catagory-item{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #9f9f9f;
+    margin-bottom: 45px;
+}
+
+.blog-recent-posts-container{
+    margin: 80px auto 0 auto;
+    width: 75%;
+}
+.blog-recent-posts-title{
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 30px;
+}
+
+.blog-recent-posts-item{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.blog-recent-posts-item-title{
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 5px;
+}
+.blog-recent-posts-item-date{
+    font-size: 13px;
+    font-weight: 400;
+    color: #9f9f9f;
+    font-family: "Poppins", sans-serif;
+}
