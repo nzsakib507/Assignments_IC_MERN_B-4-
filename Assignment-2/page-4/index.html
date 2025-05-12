@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container py-2 d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                </svg>
+                <input class="px-3 py-2 border-1 rounded-2" placeholder="Search Countres" type="text">
+            </div>
+            <h1 class="text-uppercase fw-semibold ">Joxnews</h1>
+            <div class="d-flex gap-1 align-items-center">
+                <button class="bg-transparent border-0">Cart</button>
+                <div class="bg-orange-color rounded-circle px-2 py-1">0</div>
+                <button class="py-2 px-4 bg-black text-white rounded-2 ms-4">Suscribe</button>
+            </div>
+        </div>
+        <hr class="border-black border-2">
+    </header>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Entairtainment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Health</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Politics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">International</a></li>
+                            <li><a class="dropdown-item" href="#">Internal</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container w-100 d-grid">
+            <div class=" row mx-auto justify-content-between my-5">
+                <div class="col-md-8">
+                    <img class="img-fluid rounded w-100" src="./assets/hero-image.png" alt="hero-image">
+                    <h1 class="h1 py-md-3 py-1 fw-semibold">Global Climet Summit Yelds Mixed Results on Key Agreements
+                    </h1>
+                    <div class="d-flex gap-4 justify-content-between">
+                        <div class="w-50">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias placeat fugiat enim nobis
+                            recusandae esse.
+                        </div>
+                        <div class="w-25 d-flex align-items-center gap-3">
+                            <img class="rounded-circle hero-profile-image" src="./assets/hero-image.png" alt="image">
+                            <div>
+                                <div class="fw-semibold mb-2">Michael Brown</div>
+                                <div class="text-muted">December 16, 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="d-flex gap-3">
+                        <img class="w-25 rounded" src="./assets/hero-image.png" alt="image">
+                        <div>
+                            <h5>Stock Market Hits Record High Amid Economic Optimism</h5>
+                            <div class="d-flex gap-2 text-muted">
+                                <div class="pe-2 border-end ">Business</div>
+                                <div>8 Min</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 my-4">
+                        <img class="w-25 rounded" src="./assets/hero-image.png" alt="image">
+                        <div>
+                            <h5>Stock Market Hits Record High Amid Economic Optimism</h5>
+                            <div class="d-flex gap-2 text-muted">
+                                <div class="pe-2 border-end ">Business</div>
+                                <div>8 Min</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 my-4">
+                        <img class="w-25 rounded" src="./assets/hero-image.png" alt="image">
+                        <div>
+                            <h5>Stock Market Hits Record High Amid Economic Optimism</h5>
+                            <div class="d-flex gap-2 text-muted">
+                                <div class="pe-2 border-end ">Business</div>
+                                <div>8 Min</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 my-4">
+                        <img class="w-25 rounded" src="./assets/hero-image.png" alt="image">
+                        <div>
+                            <h5>Stock Market Hits Record High Amid Economic Optimism</h5>
+                            <div class="d-flex gap-2 text-muted">
+                                <div class="pe-2 border-end ">Business</div>
+                                <div>8 Min</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 my-4">
+                        <img class="w-25 rounded" src="./assets/hero-image.png" alt="image">
+                        <div>
+                            <h5>Stock Market Hits Record High Amid Economic Optimism</h5>
+                            <div class="d-flex gap-2 text-muted">
+                                <div class="pe-2 border-end ">Business</div>
+                                <div>8 Min</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 my-4">
+                        <img class="w-25 rounded" src="./assets/hero-image.png" alt="image">
+                        <div>
+                            <h5>Stock Market Hits Record High Amid Economic Optimism</h5>
+                            <div class="d-flex gap-2 text-muted">
+                                <div class="pe-2 border-end ">Business</div>
+                                <div>8 Min</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 my-4">
+                        <img class="w-25 rounded" src="./assets/hero-image.png" alt="image">
+                        <div>
+                            <h5>Stock Market Hits Record High Amid Economic Optimism</h5>
+                            <div class="d-flex gap-2 text-muted">
+                                <div class="pe-2 border-end ">Business</div>
+                                <div>8 Min</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border-black border-2">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="letest-news">
+        <div class="container my-5">
+            <div class="d-flex justify-content-between">
+                <h1 class="text-black h3 text-uppercase fw-semibold">latest news</h1>
+                <div class="d-flex gap-2 align-items-center">
+                    <div class="text-uppercase">view&nbsp;all</div>
+                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="row row-cols-2">
+                <div class="col">
+                    
+                </div>
+
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- bootstrap scrip module -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.menu-icon{
+    width: 20px;
+}
+
+.bg-orange-color{
+    background-color: #f08f64;
+}
+
+.hero-profile-image{
+    width: 80px;
+    height: 77px;
+    background-color: aqua;
+}
+
+.arrow-icon{
+    width: 17px;
+}
