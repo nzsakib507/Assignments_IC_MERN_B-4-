@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.bg-body-color{
+    background-color: #F9F9F9;
+}
+
+.search-icon{
+    width: 24px;
+}
+
+.menu-icon{
+    width: 22px;
+}
+.catagory-card-bg-image{
+    /* width: 100%; */
+    height: 300px;
+    background-image: url(./assets/cat-card-bg-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cat-card-css{
+    width: 100%;
+    backdrop-filter: blur(4px);
+}
+#editors-pick{
+    margin: 85px auto;
+}
+
+#latest-news{
+    background-color: #f08f64;
+}
+
+.arrow-icon{
+    width: 18px;
+}
+
+.techonology-card-3-image{
+    width: 100%;
+    height: 900px;
+    background-image: url(./assets/cat-card-bg-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.techonology-card-3-top-position-css{
+    top: 8%;
+    left: 5%;
+    background-color: #f08f64;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ad-bg-img{
+    height: 450px;
+    background-image: url(./assets/AD-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-orange-color{
+    background-color: #f08f64;
+}
+
+.editorial-card-css{
+    width: 100%;
+    backdrop-filter: blur(24px);
+}
+
+
+.footer-arro-icons{
+    width: 17px;
+}
+.footer-social-icons{
+    width: 17px;
+}
