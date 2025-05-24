@@ -1,28 +1,27 @@
 @import "tailwindcss";
 
-
 /* components modifies the class name properties */
-@layer components{
-    .heading{
-        @apply text-3xl
-    }
-    .our-nav{
-        @apply text-amber-50
-    }
+@layer components {
+  .heading {
+    @apply text-3xl;
+  }
+  .our-nav {
+    @apply text-amber-50;
+  }
 }
 
 /* base modifies the html tags */
-@layer base{
-    h4{
-        @apply text-center
-    }
+@layer base {
+  h4 {
+    @apply text-center;
+  }
 }
 
 /* utility is used for responsive propwerties */
-@utility heding-md{
-    @apply md:text-5xl md:text-white md:bg-black
+@utility heding-md {
+  @apply md:text-5xl md:text-white md:bg-black;
 }
 /* another method is */
-@utility heding-md{
-     color:"black"
+@utility heding-md {
+  color: "black";
 }

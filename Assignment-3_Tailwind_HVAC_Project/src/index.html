@@ -1,16 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-     <link href="./output.css" rel="stylesheet">
-      <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- tailwind css -->
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- google font Port Lligat Slab -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap" rel="stylesheet">
 </head>
+
 <body>
-     <h1 class="text-6xl text-red-50 font-thin underline text-clifford">
-      Hello world!
-    </h1>
+
+
+  <header class="w-full mx-auto">
+    <div class="bg-green-900">
+      <div class="bg-green-900 py-3">
+
+        <nav
+          class="container w-[95%] mx-auto my-2 rounded-4xl py-2 pr-3 pl-7 bg-white flex justify-between items-center">
+          <div class="logo text-[#0B5D1E] text-[32px]">
+            CoolQuest
+          </div>
+          <ul class="text-[18px] text-[#1A1A1A] font-semibold flex gap-5">
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Past Work</li>
+            <li>Reviews</li>
+          </ul>
+          <button class="text-white text-[18px] font-semibold px-5 py-2 bg-[#0B5D1E] rounded-4xl">
+            Get Free Quote
+          </button>
+        </nav>
+
+        <section id="hero">
+          <div class="container mx-auto w-[95%] py-16 flex gap-14 justify-between items-center">
+            <div class="text-white w-1/2">
+              <!-- this is hero title -->
+              <div class="text-[64px] leading-16 py-8">
+                Reliable HVAC for Every Season
+              </div>
+              <!-- this is fratures -->
+              <div class="text-white text-lg">
+                <div class="flex items-center gap-2">
+                  <img class="w-6 h-6" src="./assets/certified-icon.png" alt="icon">
+                  <div>Certified & Experienced Technicians</div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img class="w-6 h-6" src="./assets/alarm-clock-icon.png" alt="icon">
+                  <div>Fast, Reliable Service</div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img class="w-6 h-6" src="./assets/hot-price-icon.png" alt="icon">
+                  <div>Transparent, Affordable Pricing</div>
+                </div>
+              </div>
+              <!-- this is hero form -->
+              <div class="my-8">
+                <form class="inline-block bg-white rounded-2xl p-3" action="#">
+                  <div class="w-full flex gap-3">
+                    <input class="py-2 px-4 border-2 border-green-800 rounded-2xl text-black" type="text"
+                      placeholder="Name">
+                    <input class="py-2 px-4 border-2 border-green-800 rounded-2xl text-black" type="text"
+                      placeholder="Phone">
+                  </div>
+                  <div class="w-full flex gap-5 pt-3">
+                    <select class="w-[214px] py-2 px-4 border-2 border-green-800 rounded-2xl text-black"
+                      placeholder="Service">
+                      <option value="">Services</option>
+                      <option value="">Sports</option>
+                      <option value="">Sports</option>
+                    </select>
+                    <button class="text-white text-2xl py-1 bg-green-800 block w-6/12 rounded-2xl "
+                      type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <!-- this is Certified Installer section -->
+              <div>
+                <div class="text-white text-[16px]">Certified Installer</div>
+                <div class="flex items-center gap-12 mt-3">
+                  <img src="./assets/GAF.png" alt="image">
+                  <img src="./assets/LENNOX.png" alt="image">
+                  <img src="./assets/Amirican-standard.png" alt="image">
+                </div>
+              </div>
+            </div>
+
+            <div class="w-1/2">
+              <!-- this is hero main image -->
+              <div class="bg-white h-[400px] rounded-tl-full text-white relative">
+                ii
+                <!-- this is hero main image person -->
+                <img class="absolute bottom-0 w-full" src="./assets/hero-model.png" alt="image">
+                <!-- this is warrenty logo -->
+                <img class="absolute -top-12 -left-4" src="./assets/warranty.png" alt="logo">
+                <!-- this is google reating -->
+                <div class="px-10 py-2 text-black bg-white border-4 border-gray-300 rounded-md inline absolute bottom-3 left-8">
+                  <div class="flex justify-center"><img class="w-8 h-8" src="./assets/google.png" alt=""></div>
+                  <div class="text-lg">4.8 <span class="text-gray-500">(698)</span></div>
+                </div>
+                <!-- this is export license -->
+                <div class="px-10 py-2 text-black bg-white border-4 border-gray-300 rounded-md inline absolute top-3 right-5">
+                  <div class="flex justify-center"><img class="w-8 h-8" src="./assets/shield-02.png" alt=""></div>
+                  <div class="text-lg">C20-987654</div>
+                </div>
+              </div>
+              <!-- this is hero content -->
+               <div class="w-full mt-3 flex gap-3">
+                <!-- this is content 1 -->
+                <div class="w-1/2 rounded-bl-lg">
+                  <div class="relative inline">
+                    <img class="w-full h-48" src="./assets/hero-more-image-1.jpg" alt="image">
+                    <div class="absolute bottom-0 right-0 bg-green-800 text-white text-lg px-4 py-2">View Details</div>
+                  </div>
+                </div>
+                <!-- this is content 2 -->
+                <div class="w-1/2 rounded-bl-lg">
+                  <div class="relative inline">
+                    <img class="w-full h-48" src="./assets/hero-more-image-2.jpg" alt="image">
+                    <div class="absolute bottom-0 right-0 bg-green-800 text-white text-lg px-4 py-2">View Details</div>
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </header>
+
+<div class="h-[100vh]"></div>
 </body>
+
 </html>
