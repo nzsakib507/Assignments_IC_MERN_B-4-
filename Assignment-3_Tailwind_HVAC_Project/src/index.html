@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>HVAC Project</title>
 
   <!-- tailwind css -->
   <link href="./output.css" rel="stylesheet">
@@ -18,7 +18,7 @@
 
 <body>
 
-
+  <!-- this is nav and hero section -->
   <header class="w-full mx-auto">
     <div class="bg-green-900">
       <div class="bg-green-900 py-3">
@@ -29,10 +29,10 @@
             CoolQuest
           </div>
           <ul class="text-[18px] text-[#1A1A1A] font-semibold flex gap-5">
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Past Work</li>
-            <li>Reviews</li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Past Work</a></li>
+            <li><a href="#">Reviews</a></li>
           </ul>
           <button class="text-white text-[18px] font-semibold px-5 py-2 bg-[#0B5D1E] rounded-4xl">
             Get Free Quote
@@ -144,7 +144,7 @@
 
   <!-- this is user feedback section -->
   <section id="user-feedback" class="bg-white">
-    <div class="container w-[95%] mx-auto my-20">
+    <div class="container w-[95%] mx-auto my-24 mt-36">
       <!-- this is main title -->
       <div class="text-black text-5xl font-bold text-center mb-12">Trusted by Families Like Yours</div>
       <!-- this is main cards holder -->
@@ -166,14 +166,14 @@
             <img class="" src="./assets/start-icon.png" alt="ll">
           </div>
           <!-- this is feedback / comments -->
-           <p class="text-center text-sm text-[#666666] py-4">
+          <p class="text-center text-sm text-[#666666] py-4">
             “Super professional service, quick installation, and everything works perfectly. Highly recommend!”
-           </p>
-           <!-- this is google review part -->
-            <div class="py-3">
-              <div class="flex justify-center"><img class="w-8 h-8 " src="./assets/google.png" alt="image"></div>
-              <div class="w-full text-sm text-center pt-2">Reviewed on Google</div>
-            </div>
+          </p>
+          <!-- this is google review part -->
+          <div class="py-3">
+            <div class="flex justify-center"><img class="w-8 h-8 " src="./assets/google.png" alt="image"></div>
+            <div class="w-full text-sm text-center pt-2">Reviewed on Google</div>
+          </div>
         </div>
         <!-- this is user feedback card 2 -->
         <div class="w-md py-3.5 px-16 rounded-3xl shadow-2xl bg-[#0B5D1E] text-white">
@@ -192,14 +192,14 @@
             <img class="" src="./assets/start-icon.png" alt="ll">
           </div>
           <!-- this is feedback / comments -->
-           <p class="text-center text-sm text-gray-400 py-4">
+          <p class="text-center text-sm text-gray-400 py-4">
             “Very happy with their work! The team was efficient and the new system runs great.”
-           </p>
-           <!-- this is google review part -->
-            <div class="py-3">
-              <div class="flex justify-center"><img class="w-8 h-8 " src="./assets/google.png" alt="image"></div>
-              <div class="w-full text-sm text-center pt-2">Reviewed on Google</div>
-            </div>
+          </p>
+          <!-- this is google review part -->
+          <div class="py-3">
+            <div class="flex justify-center"><img class="w-8 h-8 " src="./assets/google.png" alt="image"></div>
+            <div class="w-full text-sm text-center pt-2">Reviewed on Google</div>
+          </div>
         </div>
         <!-- this is user feedback card 3 -->
         <div class="w-md py-3.5 px-16 rounded-3xl shadow-2xl">
@@ -218,24 +218,313 @@
             <img class="" src="./assets/start-icon.png" alt="ll">
           </div>
           <!-- this is feedback / comments -->
-           <p class="text-center text-sm text-[#666666] py-4">
+          <p class="text-center text-sm text-[#666666] py-4">
             “Great experience from start to finish. Honest pricing and top-notch service!”
-           </p>
-           <!-- this is google review part -->
-            <div class="py-3">
-              <div class="flex justify-center"><img class="w-8 h-8 " src="./assets/google.png" alt="image"></div>
-              <div class="w-full text-sm text-center pt-2">Reviewed on Google</div>
-            </div>
+          </p>
+          <!-- this is google review part -->
+          <div class="py-3">
+            <div class="flex justify-center"><img class="w-8 h-8 " src="./assets/google.png" alt="image"></div>
+            <div class="w-full text-sm text-center pt-2">Reviewed on Google</div>
+          </div>
         </div>
-        
-
-
+      </div>
+      <!-- this is view more btn -->
+      <div class="flex justify-center pt-12">
+        <button class="py-4 px-12 bg-green-800 rounded-lg text-white text-lg">View more</button>
       </div>
   </section>
 
 
+  <!-- this is certificate section -->
+  <section>
+    <div class="container mx-auto w-[95%] bg-white my-24 mt-40">
+      <!-- this is title -->
+      <div class="font-bold text-center text-5xl">Your Trusted HVAC Experts</div>
+      <!-- this is certificates image holder -->
+      <div class="flex flex-col justify-center items-center gap-10 mt-14">
+        <!-- 1st line -->
+        <div class="flex justify-center items-center gap-14">
+          <!-- 1st certificate -->
+          <div class="flex flex-col justify-center items-center">
+            <img class="w-[100px]" src="./assets/ISO-logo-9001.png" alt="image">
+            <div class="text-center text-lg font-normal">ISO 9001 Certified</div>
+            <div class="text-center text-sm text-[#666666]">Quality Management for HVAC Excellence</div>
+          </div>
+          <!-- 2st certificate -->
+          <div class="flex flex-col justify-center items-center">
+            <img class="h-[100px]" src="./assets/ISO-logo-2.png" alt="image">
+            <div class="text-center text-lg font-normal">ISO 14001 Certification</div>
+            <div class="text-center text-sm text-[#666666]">Eco-Friendly HVAC Solutions</div>
+          </div>
+        </div>
+
+        <!-- 2nd line -->
+        <div class="flex justify-center items-center gap-14">
+          <!-- 1st certificate -->
+          <div class="flex flex-col justify-center items-center">
+            <img class="h-[100px]" src="./assets/EPA-certificate.png" alt="image">
+            <div class="text-center text-lg font-normal">EPA Certified</div>
+          </div>
+          <!-- 2st certificate -->
+          <div class="flex flex-col justify-center items-center">
+            <img class="h-[100px]" src="./assets/BBA-certificate.png" alt="image">
+            <div class="text-center text-lg font-normal">BBB Accredited</div>
+          </div>
+          <!-- 3st certificate -->
+          <div class="flex flex-col justify-center items-center">
+            <img class="h-[100px]" src="./assets/NATE-certificate.png" alt="image">
+            <div class="text-center text-lg font-normal">NATE Certified</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
+  <!-- this is benefits section -->
+  <section>
+    <div class="mx-auto w-full bg-[#EBFFF1] mt-48 py-20">
+      <div class="text-5xl font-bold text-center text-black mb-14">The Benefits of Choosing Us</div>
+      <!-- this is card holder -->
+      <div class="container mx-auto w-[95%] flex gap-8 items-center justify-center">
+        <!-- card 1 -->
+        <div class="w-md py-8 px-14 rounded-tr-xl rounded-bl-xl bg-white flex flex-col justify-center items-center">
+          <img class="w-20 h-20 mb-5" src="./assets/clock-03.png" alt="image">
+          <div class="text-2xl text-center mb-1.5 font-medium">24/7 Emergency Services</div>
+          <div class="text-sm text-[#666666] text-center">Fast and reliable emergency HVAC services available 24/7.
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="w-md py-8 px-14 rounded-tr-xl rounded-bl-xl bg-white flex flex-col justify-center items-center">
+          <img class="w-20 h-20 mb-5" src="./assets/labor.png" alt="image">
+          <div class="text-2xl text-center mb-1.5 font-medium">Experienced Professionals</div>
+          <div class="text-sm text-[#666666] text-center">Highly trained and certified HVAC experts with years of
+            industry experience.</div>
+        </div>
+        <!-- card 3 -->
+        <div class="w-md py-8 px-14 rounded-tr-xl rounded-bl-xl bg-white flex flex-col justify-center items-center">
+          <img class="w-20 h-20 mb-5" src="./assets/dollar-circle.png" alt="image">
+          <div class="text-2xl text-center mb-1.5 font-medium">Affordable Pricing</div>
+          <div class="text-sm text-[#666666] text-center">Transparent and competitive pricing with no hidden fees.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- this is past work section -->
+  <section>
+    <div class="container mx-auto my-20 w-[92.5%]">
+      <!-- card holder -->
+      <div class="grid grid-cols-2 flex-row justify-center gap-8">
+        <!-- card 1 -->
+        <div class="">
+          <!-- title -->
+          <div class="text-5xl font-bold">Past Work That Speaks for Itself</div>
+          <p class="text-lg text-[#666666] mt-10">Explore some of the outstanding HVAC projects we’ve proudly completed.
+            Every image reflects our unwavering commitment to quality, reliability, and expert craftsmanship — from
+            flawless installations to seamless maintenance. These are just a few examples of the exceptional results we
+            deliver for homeowners like you.</p>
+          <button class="py-3 px-10 mt-20 bg-green-800 rounded-lg text-white text-lg">Explore Our Work</button>
+        </div>
+        <!-- card 2 -->
+        <div class=" bg-[#0B5D1E] rounded-2xl px-6 py-6">
+          <h1 class="text-white text-2xl font-medium py-2.5">Efficient Home Heating Upgrade</h1>
+          <p class="text-sm text-white w-11/12">Installed a high-efficiency furnace system, reducing energy costs and
+            improving comfort for the homeowners.</p>
+          <img class="rounded-xl w-full mt-6" src="./assets/past-work-1.png" alt="image">
+        </div>
+        <!-- card 3 -->
+        <div class=" bg-[#0B5D1E] rounded-2xl px-6 py-6">
+          <h1 class="text-white text-2xl font-medium py-2.5">Complete HVAC System Installation</h1>
+          <p class="text-sm text-white w-11/12">Designed and installed a full heating and cooling solution for a newly
+            built modern home.</p>
+          <img class="rounded-xl w-full mt-6" src="./assets/past-work-2.png" alt="image">
+        </div>
+        <!-- card 4 -->
+        <div class=" bg-[#0B5D1E] rounded-2xl px-6 py-6">
+          <h1 class="text-white text-2xl font-medium py-2.5">Emergency AC Repair & Restoration</h1>
+          <p class="text-sm text-white w-11/12">Rapid response service that restored cooling during peak summer heat,
+            ensuring family comfort and safety.</p>
+          <img class="rounded-xl w-full mt-6" src="./assets/past-work-3.png" alt="image">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- this is save big section -->
+  <section>
+    <div class="container w-[93%] mx-auto my-28">
+      <!-- title -->
+      <div class="text-5xl font-bold text-center mb-10">Save Big on Your Next HVAC Project</div>
+      <!--  -->
+      <div class="flex justify-center gap-10">
+        <!-- card 1 -->
+        <div class="w-2/3 relative rounded-2xl bg-[url(./assets/save-big-1.jpg)] bg-cover bg-center h-96 grayscale-50">
+          <div class="w-2/3 absolute bottom-5 left-6">
+            <button class="py-4 px-12 bg-[#EBFFF1] rounded-lg text-[#0B5D1E] text-lg mb-3">Hot Offer</button>
+            <div class="text-2xl text-white font-medium py-4">Get $500 OFF New HVAC System Installation!</div>
+            <div class="text-sm text-white">Upgrade your comfort and save big! Get an instant $500 OFF when you install
+              a brand-new, energy-efficient HVAC system — limited time only!</div>
+          </div>
+          <!-- <img class="w-full" src="./assets/save-big-1.jpg" alt="image"> -->
+          <div></div>
+        </div>
+        <!-- card 2 -->
+        <div class="w-1/3 rounded-2xl h-96 bg-[url(./assets/save-big-2.jpg)] bg-cover bg-center">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- this is bring comfort section -->
+  <section>
+    <div class="container w-[93%] mx-auto my-32">
+      <!-- title -->
+      <div class="text-5xl font-bold text-center mb-10">How We Bring Comfort to Your Home</div>
+      <!-- cards -->
+      <div class="flex items-center justify-center gap-5">
+        <!-- card 1 -->
+        <div
+          class="w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./assets/bc-c-1.jpg)] bg-cover bg-center relative shadow-2xl">
+          <!-- <img src="" alt="image"> -->
+          <div class="absolute z-20 bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
+            <img class="w-6 h-6" src="./assets/calendar-03.png" alt="icon">
+          </div>
+          <div class="p-3.5 px-5 bg-[#EBFFF1] absolute bottom-0 left-0">
+            <div class="text-lg text-[#1A1A1A]">Schedule a Consultation</div>
+            <div class="text-sm w-11/12 text-[#666666]">Contact us to book your free consultation with our HVAC experts.
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./assets/bc-c-2.jpg)] bg-cover bg-center relative shadow-2xl">
+          <!-- <img src="" alt="image"> -->
+          <div class="absolute z-20 bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
+            <img class="w-6 h-6" src="./assets/license.png" alt="icon">
+          </div>
+          <div class="p-3.5 px-5 bg-[#EBFFF1] absolute bottom-0 left-0">
+            <div class="text-lg text-[#1A1A1A]">Schedule a Consultation</div>
+            <div class="text-sm w-11/12 text-[#666666]">Contact us to book your free consultation with our HVAC experts.
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div
+          class="w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./assets/bc-c-3.jpg)] bg-cover bg-center relative shadow-2xl">
+          <!-- <img src="" alt="image"> -->
+          <div class="absolute z-20 bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
+            <img class="w-6 h-6" src="./assets/wrench-01.png" alt="icon">
+          </div>
+          <div class="p-3.5 px-5 bg-[#EBFFF1] absolute bottom-0 left-0">
+            <div class="text-lg text-[#1A1A1A]">Schedule a Consultation</div>
+            <div class="text-sm w-11/12 text-[#666666]">Contact us to book your free consultation with our HVAC experts.
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div
+          class="w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./assets/bc-c-4.jpg)] bg-cover bg-center relative shadow-2xl">
+          <!-- <img src="" alt="image"> -->
+          <div class="absolute z-20 bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
+            <img class="w-6 h-6" src="./assets/home-09.png" alt="icon">
+          </div>
+          <div class="p-3.5 px-5 bg-[#EBFFF1] absolute bottom-0 left-0">
+            <div class="text-lg text-[#1A1A1A]">Schedule a Consultation</div>
+            <div class="text-sm w-11/12 text-[#666666]">Contact us to book your free consultation with our HVAC experts.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- this is HSVC Services section -->
+  <section>
+    <div class="container w-[93%] mx-auto my-32">
+      <!-- title -->
+      <div class="text-5xl font-bold text-center mb-10">Our HVAC Services</div>
+      <!-- cards -->
+      <div class="flex items-center justify-center gap-7 my-9">
+        <!-- card 1 -->
+        <div class="w-1/3">
+          <!-- <img class="w-full rounded-2xl" src="./assets/services-c-1.jpg" alt="image"> -->
+          <div class="w-full h-80 rounded-2xl bg-[url(./assets/services-c-1.jpg)] bg-cover bg-center"></div>
+          <div class="py-4">
+            <div class="text-2xl mb-2.5">Air Conditioner Installation</div>
+            <div class="text-sm text-[#666666]">Stay cool all summer with fast, professional AC installations built to
+              last.</div>
+          </div>
+          <button class="bg-[#0B5D1E] py-3 px-7 text-white rounded-xl">Explore Service</button>
+        </div>
+        <!-- card 2 -->
+        <div class="w-1/3">
+          <!-- <img class="w-full rounded-2xl" src="./assets/services-c-1.jpg" alt="image"> -->
+          <div class="w-full h-80 rounded-2xl bg-[url(./assets/services-c-2.jpg)] bg-cover "></div>
+          <div class="py-4">
+            <div class="text-2xl mb-2.5">Heating System Repair</div>
+            <div class="text-sm text-[#666666]">Keep your home warm and safe with expert repair services for any heating
+              system.</div>
+          </div>
+          <button class="bg-[#0B5D1E] py-3 px-7 text-white rounded-xl">Explore Service</button>
+        </div>
+        <!-- card 3 -->
+        <div class="w-1/3">
+          <!-- <img class="w-full rounded-2xl" src="./assets/services-c-1.jpg" alt="image"> -->
+          <div class="w-full h-80 rounded-2xl bg-[url(./assets/services-c-3.jpg)] bg-cover bg-center"></div>
+          <div class="py-4">
+            <div class="text-2xl mb-2.5">Indoor Air Quality Solutions</div>
+            <div class="text-sm text-[#666666]">Breathe cleaner, healthier air with advanced filtration and ventilation
+              systems.</div>
+          </div>
+          <button class="bg-[#0B5D1E] py-3 px-7 text-white rounded-xl">Explore Service</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- this is meet people section -->
+  <section>
+    <div class="container w-[93%] mx-auto my-32">
+      <!-- title -->
+      <div class="text-5xl font-bold text-center mb-10">Meet the People Behind the Work</div>
+      <!-- cards -->
+      <div class="flex items-center justify-center gap-7 my-9">
+        <!-- card 1 -->
+        <div class="w-2/4">
+          <!-- <img src="./assets/meet-pepple.jpg" alt=""> -->
+          <div class="rounded-lg bg-[url(./assets/meet-pepple.jpg)] bg-cover h-96 w-full"></div>
+        </div>
+        <!-- card 2 -->
+         <div class="w-1/4 border-2 h-64 border-[#0B5D1E] rounded-xl px-4 flex flex-col justify-center gap-8">
+          <div class="text-sm text-[#666666]">“My mission is simple — to give every homeowner reliable, efficient comfort they can count on, every day.”</div>
+          <div>
+            <div class="text-2xl text-[#0B5D1E]">James Carter</div>
+            <div class="text-sm text-[#666666] mt-2.5">Founder & Senior HVAC Specialist</div>
+          </div>
+         </div>
+        <!-- card 3 -->
+         <div class="w-1/4 border-2 h-64 border-[#0B5D1E] rounded-xl px-4 flex flex-col justify-center gap-8">
+          <div class="text-sm text-[#666666]">“I’m here to ensure every project runs smoothly and every customer feels heard, respected, and happy with our work.”</div>
+          <div>
+            <div class="text-2xl text-[#0B5D1E]">Michael Torres</div>
+            <div class="text-sm text-[#666666] mt-2.5">Operations Manager & Customer Care Lead</div>
+          </div>
+         </div>
+
+      </div>
+    </div>
+  </section>
 
 </body>
 
