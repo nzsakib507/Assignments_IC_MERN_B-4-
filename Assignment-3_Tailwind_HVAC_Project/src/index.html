@@ -23,28 +23,36 @@
     <div class="bg-[url(./assets/hero-bg-1.png)] bg-cover bg-center">
       <div class="bg-[url(./assets/hero-bg-2.png)] bg-center py-3">
 
+        <!-- this is nav part -->
         <nav
           class="container w-[95%] mx-auto my-2 rounded-4xl py-2 pr-3 pl-7 bg-white flex justify-between items-center">
           <div class="logo text-[#0B5D1E] text-[32px]">
             CoolQuest
           </div>
-          <ul class="text-[18px] text-[#1A1A1A] font-semibold flex gap-5">
+          <ul class="text-[18px] text-[#1A1A1A] font-semibold hidden lg:flex gap-5">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Past Work</a></li>
             <li><a href="#">Reviews</a></li>
           </ul>
-          <button class="text-white text-[18px] font-semibold px-5 py-2 bg-[#0B5D1E] rounded-4xl">
+          <button
+            class="hidden lg:inline-block text-white text-[18px] font-semibold px-5 py-2 bg-[#0B5D1E] rounded-4xl">
             Get Free Quote
           </button>
+
+          <div class="block md:hidden">
+            menu icon
+          </div>
         </nav>
 
+        <!-- this is hero part -->
         <section id="hero">
-          <div class="container mx-auto w-[95%] py-16 flex gap-14 justify-between items-center">
+          <div
+            class="container mx-auto w-[95%] py-8 md:py-16 flex flex-col-reverse lg:flex-row gap-14 justify-between items-center">
             <!-- this is hero left side -->
-            <div class="text-white w-1/2">
+            <div class="text-white w-full lg:w-1/2">
               <!-- this is hero title -->
-              <div class="text-[64px] leading-16 py-8">
+              <div class="text-5xl lg:text-[64px] leading-16 py-8">
                 Reliable HVAC for Every Season
               </div>
               <!-- this is fratures -->
@@ -65,7 +73,7 @@
               <!-- this is hero form -->
               <div class="my-8">
                 <form class="inline-block bg-white rounded-2xl p-3" action="#">
-                  <div class="w-full flex gap-3">
+                  <div class="lg:w-full flex flex-col lg:flex-row gap-3">
                     <input class="py-2 px-4 border-2 border-green-800 rounded-2xl text-black" type="text"
                       placeholder="Name">
                     <input class="py-2 px-4 border-2 border-green-800 rounded-2xl text-black" type="text"
@@ -86,7 +94,7 @@
               <!-- this is Certified Installer section -->
               <div>
                 <div class="text-white text-[16px]">Certified Installer</div>
-                <div class="flex items-center gap-12 mt-3">
+                <div class="flex flex-wrap items-center gap-12 mt-3">
                   <img src="./assets/GAF.png" alt="image">
                   <img src="./assets/LENNOX.png" alt="image">
                   <img src="./assets/Amirican-standard.png" alt="image">
@@ -95,7 +103,7 @@
             </div>
 
             <!-- this is hero right side -->
-            <div class="w-1/2">
+            <div class="w-full lg:w-1/2">
               <!-- this is hero main image -->
               <div class="bg-white h-[400px] rounded-tl-full text-green-900 relative">
                 i
@@ -121,14 +129,14 @@
                 <!-- this is content 1 -->
                 <div class="w-1/2 rounded-bl-lg">
                   <div class="relative inline">
-                    <img class="w-full h-48" src="./assets/hero-more-image-1.jpg" alt="image">
+                    <img class="w-full h-32 lg:h-48" src="./assets/hero-more-image-1.jpg" alt="image">
                     <div class="absolute bottom-0 right-0 bg-green-800 text-white text-lg px-4 py-2">View Details</div>
                   </div>
                 </div>
                 <!-- this is content 2 -->
                 <div class="w-1/2 rounded-bl-lg">
                   <div class="relative inline">
-                    <img class="w-full h-48" src="./assets/hero-more-image-2.jpg" alt="image">
+                    <img class="w-full h-32 lg:h-48" src="./assets/hero-more-image-2.jpg" alt="image">
                     <div class="absolute bottom-0 right-0 bg-green-800 text-white text-lg px-4 py-2">View Details</div>
                   </div>
                 </div>
@@ -144,11 +152,11 @@
 
   <!-- this is user feedback section -->
   <section id="user-feedback" class="bg-white">
-    <div class="container w-[95%] mx-auto my-24 mt-36">
+    <div class="container w-[95%] mx-auto my-24 mt-24 lg:mt-36">
       <!-- this is main title -->
-      <div class="text-black text-5xl font-bold text-center mb-12">Trusted by Families Like Yours</div>
+      <div class="text-black text-4xl lg:text-5xl font-bold text-center mb-12">Trusted by Families Like Yours</div>
       <!-- this is main cards holder -->
-      <div class="flex justify-center items-center gap-6">
+      <div class="flex flex-wrap lg:flex-nowrap justify-center items-center gap-6">
         <!-- this is user feedback card 1 -->
         <div class="w-md py-3.5 px-16 rounded-3xl shadow-2xl">
           <!-- this is user image -->
@@ -237,13 +245,13 @@
 
   <!-- this is certificate section -->
   <section>
-    <div class="container mx-auto w-[95%] bg-white my-24 mt-40">
+    <div class="container mx-auto w-[95%] bg-white my-24 mt-20 lg:mt-40">
       <!-- this is title -->
-      <div class="font-bold text-center text-5xl">Your Trusted HVAC Experts</div>
+      <div class="font-bold text-center text-4xl lg:text-5xl">Your Trusted HVAC Experts</div>
       <!-- this is certificates image holder -->
       <div class="flex flex-col justify-center items-center gap-10 mt-14">
         <!-- 1st line -->
-        <div class="flex justify-center items-center gap-24">
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-11 lg:gap-24">
           <!-- 1st certificate -->
           <div class="flex flex-col justify-center items-center">
             <img class="w-[100px]" src="./assets/ISO-logo-9001.png" alt="image">
@@ -259,7 +267,7 @@
         </div>
 
         <!-- 2nd line -->
-        <div class="flex justify-center items-center gap-24">
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-24">
           <!-- 1st certificate -->
           <div class="flex flex-col justify-center items-center">
             <img class="h-[100px]" src="./assets/EPA-certificate.png" alt="image">
@@ -283,26 +291,26 @@
 
   <!-- this is benefits section -->
   <section>
-    <div class="mx-auto w-full bg-[#EBFFF1] mt-48 py-20">
-      <div class="text-5xl font-bold text-center text-black mb-14">The Benefits of Choosing Us</div>
+    <div class="mx-auto w-full bg-[#EBFFF1] mt-24 lg:mt-48 py-20">
+      <div class="text-4xl lg:text-5xl font-bold text-center text-black mb-14">The Benefits of Choosing Us</div>
       <!-- this is card holder -->
-      <div class="container mx-auto w-[95%] flex gap-8 items-center justify-center">
+      <div class="container mx-auto w-[95%] flex flex-wrap lg:flex-nowrap gap-8 items-center justify-center">
         <!-- card 1 -->
-        <div class="w-md py-8 px-14 rounded-tr-xl rounded-bl-xl bg-white flex flex-col justify-center items-center">
+        <div class="w-md py-8 px-8 lg:px-14 rounded-tr-xl rounded-bl-xl bg-white flex flex-col justify-center items-center">
           <img class="w-20 h-20 mb-5" src="./assets/clock-03.png" alt="image">
           <div class="text-2xl text-center mb-1.5 font-medium">24/7 Emergency Services</div>
           <div class="text-sm text-[#666666] text-center">Fast and reliable emergency HVAC services available 24/7.
           </div>
         </div>
         <!-- card 2 -->
-        <div class="w-md py-8 px-14 rounded-tr-xl rounded-bl-xl bg-white flex flex-col justify-center items-center">
+        <div class="w-md py-8 px-8 lg:px-14 rounded-tr-xl rounded-bl-xl bg-white flex flex-col justify-center items-center">
           <img class="w-20 h-20 mb-5" src="./assets/labor.png" alt="image">
           <div class="text-2xl text-center mb-1.5 font-medium">Experienced Professionals</div>
           <div class="text-sm text-[#666666] text-center">Highly trained and certified HVAC experts with years of
             industry experience.</div>
         </div>
         <!-- card 3 -->
-        <div class="w-md py-8 px-14 rounded-tr-xl rounded-bl-xl bg-white flex flex-col justify-center items-center">
+        <div class="w-md py-8 px-8 lg:px-14 rounded-tr-xl rounded-bl-xl bg-white flex flex-col justify-center items-center">
           <img class="w-20 h-20 mb-5" src="./assets/dollar-circle.png" alt="image">
           <div class="text-2xl text-center mb-1.5 font-medium">Affordable Pricing</div>
           <div class="text-sm text-[#666666] text-center">Transparent and competitive pricing with no hidden fees.</div>
@@ -317,7 +325,7 @@
   <section>
     <div class="container mx-auto my-20 w-[92.5%]">
       <!-- card holder -->
-      <div class="grid grid-cols-2 flex-row justify-center gap-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 flex-row justify-center gap-8">
         <!-- card 1 -->
         <div class="">
           <!-- title -->
@@ -359,11 +367,11 @@
   <section>
     <div class="container w-[93%] mx-auto my-28">
       <!-- title -->
-      <div class="text-5xl font-bold text-center mb-10">Save Big on Your Next HVAC Project</div>
+      <div class="text-4xl lg:text-5xl font-bold text-center mb-10">Save Big on Your Next HVAC Project</div>
       <!--  -->
-      <div class="flex justify-center gap-10">
+      <div class="flex flex-col lg:flex-row justify-center gap-10">
         <!-- card 1 -->
-        <div class="w-2/3 relative rounded-2xl bg-[url(./assets/save-big-1.jpg)] bg-cover bg-center h-96 grayscale-50">
+        <div class="w-full lg:w-2/3 relative rounded-2xl bg-[url(./assets/save-big-1.jpg)] bg-cover bg-center h-96 grayscale-50">
           <div class="w-2/3 absolute bottom-5 left-6">
             <button class="py-4 px-12 bg-[#EBFFF1] rounded-lg text-[#0B5D1E] text-lg mb-3">Hot Offer</button>
             <div class="text-2xl text-white font-medium py-4">Get $500 OFF New HVAC System Installation!</div>
@@ -374,7 +382,7 @@
           <div></div>
         </div>
         <!-- card 2 -->
-        <div class="w-1/3 rounded-2xl h-96 bg-[url(./assets/save-big-2.jpg)] bg-cover bg-center">
+        <div class="w-full lg:w-1/3 rounded-2xl h-96 bg-[url(./assets/save-big-2.jpg)] bg-cover bg-center">
 
         </div>
       </div>
@@ -386,14 +394,14 @@
   <section>
     <div class="container w-[93%] mx-auto my-32">
       <!-- title -->
-      <div class="text-5xl font-bold text-center mb-10">How We Bring Comfort to Your Home</div>
+      <div class="text-4xl lg:text-5xl font-bold text-center mb-10">How We Bring Comfort to Your Home</div>
       <!-- cards -->
-      <div class="flex items-center justify-center gap-5">
+      <div class="flex flex-col md:flex-row md:flex-nowrap lg:flex-row lg:flex-nowrap items-center justify-center gap-5">
         <!-- card 1 -->
         <div
-          class="w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./assets/bc-c-1.jpg)] bg-cover bg-center relative shadow-2xl">
+          class="w-full mx-5 md:mx-0 md:w-1/2 lg:w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./assets/bc-c-1.jpg)] bg-cover bg-center relative shadow-2xl">
           <!-- <img src="" alt="image"> -->
-          <div class="absolute z-20 bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
+          <div class="absolute z-20 bottom-28 md:bottom-52 lg:bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
             <img class="w-6 h-6" src="./assets/calendar-03.png" alt="icon">
           </div>
           <div class="p-3.5 px-5 bg-[#EBFFF1] absolute bottom-0 left-0">
@@ -404,11 +412,11 @@
         </div>
         <!-- card 2 -->
         <div
-          class="w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./assets/bc-c-2.jpg)] bg-cover bg-center relative overflow-hidden shadow-2xl">
+          class="w-full mx-5 md:mx-0 md:w-1/2 lg:w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./assets/bc-c-2.jpg)] bg-cover bg-center relative overflow-hidden shadow-2xl">
           <!-- <img src="" alt="image"> -->
           <!-- <div class="bg-white absolute -top-12 -right-5 rounded-2xl border-[#EBFFF1] border-l-4 border-b-4 w-44 h-36">
           </div> -->
-          <div class="absolute z-20 bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
+          <div class="absolute z-20 bottom-28 md:bottom-52 lg:bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
             <img class="w-6 h-6" src="./assets/license.png" alt="icon">
           </div>
           <div class="p-3.5 px-5 bg-[#EBFFF1] absolute bottom-0 left-0">
@@ -419,9 +427,9 @@
         </div>
         <!-- card 3 -->
         <div
-          class="w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./assets/bc-c-3.jpg)] bg-cover bg-center relative shadow-2xl">
+          class="w-full mx-5 md:mx-0 md:w-1/2 lg:w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./assets/bc-c-3.jpg)] bg-cover bg-center relative shadow-2xl">
           <!-- <img src="" alt="image"> -->
-          <div class="absolute z-20 bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
+          <div class="absolute z-20 bottom-28 md:bottom-52 lg:bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
             <img class="w-6 h-6" src="./assets/wrench-01.png" alt="icon">
           </div>
           <div class="p-3.5 px-5 bg-[#EBFFF1] absolute bottom-0 left-0">
@@ -432,9 +440,9 @@
         </div>
         <!-- card 4 -->
         <div
-          class="w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./assets/bc-c-4.jpg)] bg-cover bg-center relative shadow-2xl">
+          class="w-full mx-5 md:mx-0 md:w-1/2 lg:w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./assets/bc-c-4.jpg)] bg-cover bg-center relative shadow-2xl">
           <!-- <img src="" alt="image"> -->
-          <div class="absolute z-20 bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
+          <div class="absolute z-20 bottom-28 md:bottom-52 lg:bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
             <img class="w-6 h-6" src="./assets/home-09.png" alt="icon">
           </div>
           <div class="p-3.5 px-5 bg-[#EBFFF1] absolute bottom-0 left-0">
@@ -451,13 +459,13 @@
 
   <!-- this is HSVC Services section -->
   <section>
-    <div class="container w-[93%] mx-auto my-32">
+    <div class="container w-[93%] mx-auto my-20 md:my-32">
       <!-- title -->
       <div class="text-5xl font-bold text-center mb-10">Our HVAC Services</div>
       <!-- cards -->
-      <div class="flex items-center justify-center gap-7 my-9">
+      <div class="flex flex-col md:flex-row mx-3.5 md:mx-0 items-center justify-center gap-7 my-9">
         <!-- card 1 -->
-        <div class="w-1/3">
+        <div class="w-full md:w-1/3">
           <!-- <img class="w-full rounded-2xl" src="./assets/services-c-1.jpg" alt="image"> -->
           <div class="w-full h-80 rounded-2xl bg-[url(./assets/services-c-1.jpg)] bg-cover bg-center"></div>
           <div class="py-4">
@@ -468,7 +476,7 @@
           <button class="bg-[#0B5D1E] py-3 px-7 text-white rounded-xl"><a href="#">Explore Service</a></button>
         </div>
         <!-- card 2 -->
-        <div class="w-1/3">
+        <div class="w-full md:w-1/3">
           <!-- <img class="w-full rounded-2xl" src="./assets/services-c-1.jpg" alt="image"> -->
           <div class="w-full h-80 rounded-2xl bg-[url(./assets/services-c-2.jpg)] bg-cover "></div>
           <div class="py-4">
@@ -479,7 +487,7 @@
           <button class="bg-[#0B5D1E] py-3 px-7 text-white rounded-xl"><a href="#">Explore Service</a></button>
         </div>
         <!-- card 3 -->
-        <div class="w-1/3">
+        <div class="w-full md:w-1/3">
           <!-- <img class="w-full rounded-2xl" src="./assets/services-c-1.jpg" alt="image"> -->
           <div class="w-full h-80 rounded-2xl bg-[url(./assets/services-c-3.jpg)] bg-cover bg-center"></div>
           <div class="py-4">
