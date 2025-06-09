@@ -1,8 +1,53 @@
 
+//  fatching data from the API
+const loadMeals = () => {
+    fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=")
+        .then((res) => res.json())
+        .then((data) => displayMeals(data.meals))
+        .catch((error) => console.log("Fetch error:", error));
+};
+loadMeals();
 
+const displayMeals = (meals) => {
+    const mealContainer = document.getElementById("mealContainer");
 
+    meals.forEach((meals) => {
+        const mealCard = document.createElement("div");
+        mealCard.className = "w-full shadow-2xl rounded-2xl";
+        // mealContainer.innerHTML = ""; // Clear previous meals
+        mealCard.innerHTML = `
+                <div onclick="foodCardClick()" class="w-full shadow-2xl rounded-2xl">
+                    <img src=${meals.strMealThumb} alt="image" class="w-full h-64 object-cover rounded-t-2xl">
+                    <div class="text-2xl font-semibold py-3 px-4">${meals.strMeal}</div>
+                    <div class="pb-6 px-4 line-clamp-3 overflow-hidden">${meals.strInstructions}</div>
+                    <div class="flex justify-end">
+                        <div class="my-3.5 mx-3.5 px-4 py-2.5 text-white font-semibold bg-yellow-500 rounded-xl">View Details</div>
+                    </div>
+                 </div>
+        `;
 
+        mealContainer.appendChild(mealCard);
+        console.log(meals);
+    });
+}
 
 function foodCardClick() {
-
+    alert("You clicked a meal!");
 }
+
+//   meals.forEach((meal) => {
+//     mealContainer.innerHTML += `
+//       <div class="card">
+//         <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
+//         <h3>${meal.strMeal}</h3>
+//         <p><strong>Category:</strong> ${meal.strCategory}</p>
+//       </div>
+//     `;
+//   });
+
+
+
+
+// function foodCardClick() {
+
+// }

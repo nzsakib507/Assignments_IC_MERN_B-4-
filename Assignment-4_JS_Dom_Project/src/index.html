@@ -21,7 +21,7 @@
     </header>
 
 
-    <section id="hero" class="bg-[url(./assets/pexels-robinstickel-70497.jpg)] bg-center bg-cover text-white py-20">
+    <section id="hero" class="bg-blue-500 bg-[url(./assets/pexels-robinstickel-70497.jpg)] bg-center bg-cover text-white py-20">
         <div class="container mx-auto flex flex-col items-center justify-center gap-5">
             <h1 class="text-4xl font-bold text-center text-white ">Search your <br> favourite Food</h1>
             <p class="text-lg text-center">This is a simple project to <br> demonstrate JavaScript DOM manipulation.</p>
@@ -40,14 +40,20 @@
 
     <section>
         <div class="container mx-auto w-[93%] my-7">
-            <div id="results" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Search results will be displayed here -->
-                 <div onclick="foodCardClick()" class="w-full shadow-2xl rounded-2xl ">
+            <div id="mealContainer" class="grid items-stretch justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- this is cards -->
+                <!-- <div onclick="foodCardClick()" class="w-full shadow-2xl rounded-2xl">
                     <img src="" alt="image" class="w-full h-64 object-cover rounded-t-2xl">
                     <div class="text-2xl font-semibold py-3 px-4">Titile</div>
                     <div class="pb-6 px-4">details</div>
-                 </div>
+                    <div class="flex justify-end">
+                        <div class="mb-3.5 mx-3.5 px-4 py-2.5 text-white font-semibold bg-yellow-500 rounded-xl">View Details</div>
+                    </div>
+                 </div> -->
+
+
             </div>
+            
         </div>
     </section>
 
@@ -65,6 +71,10 @@
 
         </div>
     </footer>
+
+    <button id="scrollToTopBtn" class="bg-amber-500">
+        <svg class="w-5 h-5 px-3 py-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+    </button>
 
     <script src="./script.js"></script>
 </body>
