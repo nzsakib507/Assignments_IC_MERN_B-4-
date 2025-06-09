@@ -5,12 +5,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>JS Dom Project</title>
 </head>
 
 <body>
 
+    <header>
+        <div class="container mx-auto bg-white w-[93%] my-3 flex gap-2.5 items-center justify-center">
+            <img class="rounded-full w-7 h-7 object-cover" src="./assets/pexels-figen-kokol-1217662-11358749.jpg"
+                alt="logo">
+            <div class="text-2xl italic font-semibold">Thatix</div>
+        </div>
+    </header>
 
 
+    <section id="hero" class="bg-[url(./assets/pexels-robinstickel-70497.jpg)] bg-center bg-cover text-white py-20">
+        <div class="container mx-auto flex flex-col items-center justify-center gap-5">
+            <h1 class="text-4xl font-bold text-center text-white ">Search your <br> favourite Food</h1>
+            <p class="text-lg text-center">This is a simple project to <br> demonstrate JavaScript DOM manipulation.</p>
+        </div>
+    </section>
+
+
+    <section id="search-bar">
+        <div class="container mx-auto my-8 w-2/4 flex justify-center gap-5 rounded-xl bg-white p-3 shadow-lg">
+            <input type="text" id="search-input" class="w-full p-2 focus:outline-none" placeholder="Search for food...">
+            <button id="search-button"
+                class="bg-yellow-500 font-bold text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition duration-200">Search</button>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mx-auto w-[93%] my-7">
+            <div id="results" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Search results will be displayed here -->
+                 <div onclick="foodCardClick()" class="w-full shadow-2xl rounded-2xl ">
+                    <img src="" alt="image" class="w-full h-64 object-cover rounded-t-2xl">
+                    <div class="text-2xl font-semibold py-3 px-4">Titile</div>
+                    <div class="pb-6 px-4">details</div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-600 text-white">
+        <div class="container mx-auto w-[93%] py-5 flex items-center justify-between">
+            <div class="">
+                © 2023 Thatix. All rights reserved.
+            </div>
+            <div class="flex items-center gap-4">
+                <img class="w-6" src="./assets/icons8-facebook.svg" alt="logo">
+                <img class="w-6" src="./assets/icons8-twitter-bird.svg" alt="logo">
+                <img class="w-6" src="./assets/icons8-youtube.svg" alt="logo">
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
