@@ -26,7 +26,7 @@ const displayMeals = (meals) => {
                  </div>
         `;
 
-        mealContainer.appendChild(mealCard);
+        mealContainer.append(mealCard);
         console.log(meals);
     });
 }
@@ -51,3 +51,24 @@ function foodCardClick() {
 // function foodCardClick() {
 
 // }
+
+
+
+// Scroll to Top Button functionality
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Show the button when the user scrolls down 20px from the top of the document
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    scrollToTopBtn.classList.remove ("hidden");
+    scrollToTopBtn.classList.add ("block");
+  } else {
+    scrollToTopBtn.classList.add ("hidden");
+    scrollToTopBtn.classList.remove ("block");
+  }
+};
+
+// Scroll to the top of the document when the button is clicked
+scrollToTopBtn.onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
