@@ -4,12 +4,26 @@ let allMeals = [];
 
 //  fatching data from the API
 const loadMeals = () => {
-  fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=")
-    .then((res) => res.json())
-    .then((data) => {
-      // displayMeals(data.meals)
-      allMeals = data.meals;
-      displayMeals(allMeals);
+
+   const loader = document.getElementById("loader");
+  //  this will show the loader while fetching data
+   loader.classList.add("flex"); 
+loader.classList.remove("hidden");
+   
+   fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=")
+   .then((res) => res.json())
+   .then((data) => {
+     // displayMeals(data.meals)
+     allMeals = data.meals;
+     // displayMeals(allMeals);
+     
+     setTimeout(() => {
+      // this is do the main data card display
+       displayMeals(allMeals);
+      //  this will hide the loader after 2 seconds or when the data is fetched
+        loader.classList.add("hidden");
+loader.classList.remove("flex");
+      }, 1000);
     })
     .catch((error) => console.log("Fetch error:", error));
 };

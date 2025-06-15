@@ -33,16 +33,25 @@
     <section id="search-bar">
         <div class="container mx-auto my-8 w-2/4 flex justify-center gap-5 rounded-xl bg-white p-3 shadow-lg">
             <input type="text" id="searchInput" class="w-full p-2 focus:outline-none" placeholder="Search for food...">
-            <button onclick="searchBtnClick()" id="search-button" class="bg-yellow-500 font-bold text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition duration-200">
+            <button onclick="searchBtnClick()" id="search-button"
+                class="bg-yellow-500 font-bold text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition duration-200">
                 Search
             </button>
         </div>
     </section>
 
+
+
+
     <!-- Main item cards -->
-    <section>
+    <section class="relative">
+
+        <div id="loader" class="absolute top-0 left-0 w-full h-96 flex items-center justify-center bg-white bg-opacity-60 z-50">
+            <div class="w-12 h-12 border-4 border-yellow-500 border-t-transparent rounded-full animate-spin"></div>
+        </div>
         <div class="container mx-auto w-[93%] my-7">
-            <div id="mealContainer" class="grid items-stretch justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div id="mealContainer"
+                class="grid items-stretch justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- this is cards -->
                 <!-- <div onclick="foodCardClick()" class="w-full shadow-2xl rounded-2xl">
                     <img src="" alt="image" class="w-full h-64 object-cover rounded-t-2xl">
@@ -55,9 +64,21 @@
 
 
             </div>
-            
+
         </div>
     </section>
+
+    <!-- Modal Container Pop up window -->
+<div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div id="modalContent" class="bg-white p-6 rounded-xl relative max-w-xl w-full shadow-xl">
+    <button id="closeModal" class="absolute top-2 right-2 text-xl font-bold text-gray-500 hover:text-red-500">✖</button>
+    <div id="modalBody" class="text-gray-700">
+      <!-- food details will go here -->
+    </div>
+  </div>
+</div>
+
+
 
     <!-- Footer section -->
     <footer class="bg-gray-600 text-white">
@@ -75,8 +96,9 @@
     </footer>
 
     <!-- Scroll to top button -->
-    <button id="scrollToTopBtn" class="bg-yellow-500 rounded-2xl p-3.5 fixed bottom-5 right-5 cursor-pointer hidden shadow-lg hover:bg-yellow-600 transition duration-200">
-        <img class="w-10 h-10" src="./assets/icons8-arrow-up-64.png" alt="arrow"> 
+    <button id="scrollToTopBtn"
+        class="bg-yellow-500 rounded-2xl p-3.5 fixed bottom-5 right-5 cursor-pointer hidden shadow-lg hover:bg-yellow-600 transition duration-200">
+        <img class="w-10 h-10" src="./assets/icons8-arrow-up-64.png" alt="arrow">
     </button>
 
     <!-- Js link -->
