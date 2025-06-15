@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- tailwind cli  -->
     <link rel="stylesheet" href="output.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>JS Dom Project</title>
@@ -12,32 +14,32 @@
 
 <body>
 
+    <!-- Header section -->
     <header>
-        <div class="container mx-auto bg-white w-[93%] my-3 flex gap-2.5 items-center justify-center">
-            <img class="rounded-full w-7 h-7 object-cover" src="./assets/pexels-figen-kokol-1217662-11358749.jpg"
-                alt="logo">
-            <div class="text-2xl italic font-semibold">Thatix</div>
+        <div class="container mx-auto w-[93%] my-3 flex gap-2.5 items-center justify-center">
+            <img class="rounded-full w-28 object-cover" src="./assets/logo.png" alt="logo">
         </div>
     </header>
 
-
-    <section id="hero" class="bg-blue-500 bg-[url(./assets/pexels-robinstickel-70497.jpg)] bg-center bg-cover text-white py-20">
+    <!-- Hero Image -->
+    <section id="hero" class="bg-blue-500 bg-[url(./assets/page-title.jpg)] bg-center bg-cover text-white py-20">
         <div class="container mx-auto flex flex-col items-center justify-center gap-5">
             <h1 class="text-4xl font-bold text-center text-white ">Search your <br> favourite Food</h1>
             <p class="text-lg text-center">This is a simple project to <br> demonstrate JavaScript DOM manipulation.</p>
         </div>
     </section>
 
-
+    <!-- item search bar -->
     <section id="search-bar">
         <div class="container mx-auto my-8 w-2/4 flex justify-center gap-5 rounded-xl bg-white p-3 shadow-lg">
-            <input type="text" id="search-input" class="w-full p-2 focus:outline-none" placeholder="Search for food...">
-            <button id="search-button"
-                class="bg-yellow-500 font-bold text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition duration-200">Search</button>
+            <input type="text" id="searchInput" class="w-full p-2 focus:outline-none" placeholder="Search for food...">
+            <button onclick="searchBtnClick()" id="search-button" class="bg-yellow-500 font-bold text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition duration-200">
+                Search
+            </button>
         </div>
     </section>
 
-
+    <!-- Main item cards -->
     <section>
         <div class="container mx-auto w-[93%] my-7">
             <div id="mealContainer" class="grid items-stretch justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -57,7 +59,7 @@
         </div>
     </section>
 
-
+    <!-- Footer section -->
     <footer class="bg-gray-600 text-white">
         <div class="container mx-auto w-[93%] py-5 flex items-center justify-between">
             <div class="">
@@ -72,10 +74,12 @@
         </div>
     </footer>
 
+    <!-- Scroll to top button -->
     <button id="scrollToTopBtn" class="bg-yellow-500 rounded-2xl p-3.5 fixed bottom-5 right-5 cursor-pointer hidden shadow-lg hover:bg-yellow-600 transition duration-200">
         <img class="w-10 h-10" src="./assets/icons8-arrow-up-64.png" alt="arrow"> 
     </button>
 
+    <!-- Js link -->
     <script src="./script.js"></script>
 </body>
 
