@@ -70,11 +70,16 @@ function foodCardClick(mealId) {
   document.getElementById("modal").classList.remove("hidden");
 
   document.getElementById("modalCard").innerHTML = `
-    <h2 class="text-2xl font-bold mb-3">${meals.strMeal}</h2>
-    <img src="${meals.strMealThumb}" alt="${meals.strMeal}" class="w-full h-64 object-cover rounded-lg mb-4">
+    <h2 class="text-3xl font-bold mb-3">${meals.strMeal}</h2>
+    <img src="${meals.strMealThumb}" alt="${meals.strMeal}" class="w-full object-cover rounded-lg mb-4">
+    <p class="mb-2"><strong>Food ID:</strong> ${meals.idMeal}</p>
     <p class="mb-2"><strong>Category:</strong> ${meals.strCategory}</p>
     <p class="mb-2"><strong>Area:</strong> ${meals.strArea}</p>
-    <p class="mb-4">${meals.strInstructions}</p>
+    <p class="mb-2"><strong>Details:</strong></p>
+    <p class="mb-4 indent-10 text-justify mr-3">${meals.strInstructions}</p>
+    <div class="flex justify-end">
+        <div onclick="closeModal()" class="my-3.5 mx-3.5 px-4 py-2.5 cursor-pointer text-white font-semibold bg-yellow-500 rounded-xl">Close</div>
+    </div>
   `;
 }
 
@@ -90,6 +95,37 @@ document.getElementById("modal").addEventListener("click", function (eventClose)
     closeModal();
   }
 });
+
+
+// Input Search function
+function searchBtnClick() {
+  const searchText = document.getElementById("searchInput").value.trim().toLowerCase();
+
+  if (!searchText) {
+    // when the input is empty then it will show all meals
+    displayMeals(allMeals);
+    return;
+  }
+
+  const filteredMeals = allMeals.filter(meal =>
+    meal.strMeal.toLowerCase().includes(searchText)
+  );
+
+  if (filteredMeals.length === 0) {
+    const mealContainer = document.getElementById("mealContainer");
+    mealContainer.innerHTML = `<p class="text-center text-xl mt-10">No meals found for "${searchText}".</p>`;
+  } else {
+    displayMeals(filteredMeals);
+  }
+}
+
+// this is a function for search bar that will work when enter key will be pressed
+document.getElementById("searchInput").addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    searchBtnClick();
+  }
+});
+
 
 
 
