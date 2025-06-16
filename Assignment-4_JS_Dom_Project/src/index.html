@@ -69,10 +69,10 @@
     </section>
 
     <!-- Modal Container Pop up window -->
-<div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+<div id="modal" class="hidden fixed inset-0 bg-transparent bg-opacity-50 flex items-center justify-center z-50">
   <div id="modalContent" class="bg-white p-6 rounded-xl relative max-w-xl w-full shadow-xl">
-    <button id="closeModal" class="absolute top-2 right-2 text-xl font-bold text-gray-500 hover:text-red-500">✖</button>
-    <div id="modalBody" class="text-gray-700">
+    <button id="closeModal" onclick="closeModal()" class="absolute top-2 right-2 p-3 cursor-pointer text-xl font-bold text-gray-500 hover:text-red-500">✖</button>
+    <div id="modalCard" class="overflow-scroll h-[calc(100vh-100px)]">
       <!-- food details will go here -->
     </div>
   </div>

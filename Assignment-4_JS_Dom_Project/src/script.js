@@ -5,24 +5,24 @@ let allMeals = [];
 //  fatching data from the API
 const loadMeals = () => {
 
-   const loader = document.getElementById("loader");
+  const loader = document.getElementById("loader");
   //  this will show the loader while fetching data
-   loader.classList.add("flex"); 
-loader.classList.remove("hidden");
-   
-   fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=")
-   .then((res) => res.json())
-   .then((data) => {
-     // displayMeals(data.meals)
-     allMeals = data.meals;
-     // displayMeals(allMeals);
-     
-     setTimeout(() => {
-      // this is do the main data card display
-       displayMeals(allMeals);
-      //  this will hide the loader after 2 seconds or when the data is fetched
+  loader.classList.add("flex");
+  loader.classList.remove("hidden");
+
+  fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=")
+    .then((res) => res.json())
+    .then((data) => {
+      // displayMeals(data.meals)
+      allMeals = data.meals;
+      // displayMeals(allMeals);
+
+      setTimeout(() => {
+        // this is do the main data card display
+        displayMeals(allMeals);
+        //  this will hide the loader after 2 seconds or when the data is fetched
         loader.classList.add("hidden");
-loader.classList.remove("flex");
+        loader.classList.remove("flex");
       }, 1000);
     })
     .catch((error) => console.log("Fetch error:", error));
@@ -42,7 +42,7 @@ const displayMeals = (meals) => {
     mealCard.className = "w-full shadow-2xl rounded-2xl";
     // mealContainer.innerHTML = ""; // Clear previous meals
     mealCard.innerHTML = `
-                <div onclick="foodCardClick()" class="w-full shadow-2xl rounded-2xl">
+                <div onclick="foodCardClick(${meals.idMeal})" class="w-full cursor-pointer shadow-2xl rounded-2xl">
                     <img src=${meals.strMealThumb} alt="image" class="w-full h-64 object-cover rounded-t-2xl">
                     <div class="text-2xl font-semibold py-3 px-4">${meals.strMeal}</div>
                     <div class="pb-6 px-4 line-clamp-3 overflow-hidden">${meals.strInstructions}</div>
@@ -56,10 +56,40 @@ const displayMeals = (meals) => {
   });
 }
 
-function foodCardClick() {
-  alert("You clicked a meal!");
+// function foodCardClick() {
+//   alert("You clicked a meal!");
+
+
+// }
+
+// modal function
+function foodCardClick(mealId) {
+  // Find the meal from allMeals
+  const meals = allMeals.find((m) => m.idMeal.toString() === mealId.toString());
+
+  document.getElementById("modal").classList.remove("hidden");
+
+  document.getElementById("modalCard").innerHTML = `
+    <h2 class="text-2xl font-bold mb-3">${meals.strMeal}</h2>
+    <img src="${meals.strMealThumb}" alt="${meals.strMeal}" class="w-full h-64 object-cover rounded-lg mb-4">
+    <p class="mb-2"><strong>Category:</strong> ${meals.strCategory}</p>
+    <p class="mb-2"><strong>Area:</strong> ${meals.strArea}</p>
+    <p class="mb-4">${meals.strInstructions}</p>
+  `;
 }
 
+
+
+// Function is to close the modal
+function closeModal() {
+  document.getElementById("modal").classList.add("hidden");
+}
+// this function closes the modal if clicked outside of that modal box
+document.getElementById("modal").addEventListener("click", function (eventClose) {
+  if (eventClose.target === this) {
+    closeModal();
+  }
+});
 
 
 
