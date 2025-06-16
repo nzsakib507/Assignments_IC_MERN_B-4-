@@ -3,14 +3,14 @@
 let allMeals = [];
 
 //  fatching data from the API
-const loadMeals = () => {
+const loadMeals = (query = "")  => {    // if i want to search for a specific meal then i can pass the query as an argument or if i dont want it then simpilly i have to erase queary and the () stays and i have to remove ${query} from fatch api link
 
   const loader = document.getElementById("loader");
   //  this will show the loader while fetching data
   loader.classList.add("flex");
   loader.classList.remove("hidden");
 
-  fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=")
+  fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`)
     .then((res) => res.json())
     .then((data) => {
       // displayMeals(data.meals)
@@ -42,7 +42,7 @@ const displayMeals = (meals) => {
     mealCard.className = "w-full shadow-2xl rounded-2xl";
     // mealContainer.innerHTML = ""; // Clear previous meals
     mealCard.innerHTML = `
-                <div onclick="foodCardClick(${meals.idMeal})" class="w-full cursor-pointer shadow-2xl rounded-2xl">
+                <div onclick="foodCardClick(${meals.idMeal})" class="w-full h-full cursor-pointer shadow-2xl rounded-2xl">
                     <img src=${meals.strMealThumb} alt="image" class="w-full h-64 object-cover rounded-t-2xl">
                     <div class="text-2xl font-semibold py-3 px-4">${meals.strMeal}</div>
                     <div class="pb-6 px-4 line-clamp-3 overflow-hidden">${meals.strInstructions}</div>
@@ -99,25 +99,40 @@ document.getElementById("modal").addEventListener("click", function (eventClose)
 
 // Input Search function
 function searchBtnClick() {
-  const searchText = document.getElementById("searchInput").value.trim().toLowerCase();
+  const searchText = document.getElementById("searchInput").value.trim();
+
+  const loader = document.getElementById("loader");
+  loader.classList.remove("hidden");
+  loader.classList.add("flex");
 
   if (!searchText) {
-    // when the input is empty then it will show all meals
-    displayMeals(allMeals);
+    // If input is empty, load all meals
+    loadMeals();
     return;
   }
 
-  const filteredMeals = allMeals.filter(meal =>
-    meal.strMeal.toLowerCase().includes(searchText)
-  );
+  fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`)
+    .then((res) => res.json())
+    .then((data) => {
+      const meals = data.meals;
 
-  if (filteredMeals.length === 0) {
-    const mealContainer = document.getElementById("mealContainer");
-    mealContainer.innerHTML = `<p class="text-center text-xl mt-10">No meals found for "${searchText}".</p>`;
-  } else {
-    displayMeals(filteredMeals);
-  }
+      const mealContainer = document.getElementById("mealContainer");
+
+      if (!meals) {
+        mealContainer.innerHTML = `<p class="text-center text-xl mt-10">No meals found for "${searchText}".</p>`;
+      } else {
+        allMeals = meals; // optional: update global meals
+        displayMeals(meals);
+      }
+
+      loader.classList.add("hidden");
+      loader.classList.remove("flex");
+    })
+    .catch((error) => {
+      console.error("Search fetch error:", error);
+    });
 }
+
 
 // this is a function for search bar that will work when enter key will be pressed
 document.getElementById("searchInput").addEventListener("keydown", function (e) {
