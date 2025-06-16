@@ -101,6 +101,7 @@ document.getElementById("modal").addEventListener("click", function (eventClose)
 function searchBtnClick() {
   const searchText = document.getElementById("searchInput").value.trim();
 
+  // loading animation
   const loader = document.getElementById("loader");
   loader.classList.remove("hidden");
   loader.classList.add("flex");
@@ -125,6 +126,7 @@ function searchBtnClick() {
         displayMeals(meals);
       }
 
+      // hide loading animition
       loader.classList.add("hidden");
       loader.classList.remove("flex");
     })
